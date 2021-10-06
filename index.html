@@ -12,9 +12,10 @@
     
     <script>
         const show = document.getElementById("show");
-        console.log(show);
         
+        window.addEventListener("orientationchange", function () {
         show.innerHTML = screen.orientation.angle;
+        }
     </script>
     
 </html>
